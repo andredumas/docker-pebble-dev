@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     python2.7-dev \
     python-pip
 
-ENV PEBBLE_VERSION PebbleSDK-2.8.1
+ENV PEBBLE_VERSION PebbleSDK-3.0
 ENV PEBBLE_HOME /opt/$PEBBLE_VERSION
 ENV PATH $PEBBLE_HOME/bin:$PATH
 
