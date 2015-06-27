@@ -12,7 +12,7 @@ ENV PEBBLE_VERSION PebbleSDK-3.0
 ENV PEBBLE_HOME /opt/$PEBBLE_VERSION
 ENV PATH $PEBBLE_HOME/bin:$PATH
 
-RUN curl -sSL https://pebble-developer-site-server.herokuapp.com/sdk/$PEBBLE_VERSION.tar.gz \
+RUN curl -sSL http://assets.getpebble.com.s3-website-us-east-1.amazonaws.com/sdk2/$PEBBLE_VERSION.tar.gz \
 		| tar -v -C /opt -xz
 
 RUN curl -sSL http://assets.getpebble.com.s3-website-us-east-1.amazonaws.com/sdk/arm-cs-tools-ubuntu-universal.tar.gz \
