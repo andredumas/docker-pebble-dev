@@ -30,3 +30,5 @@ RUN /bin/bash -c " \
 
 VOLUME /pebble
 WORKDIR /pebble
+
+ENTRYPOINT ["pebble"]
