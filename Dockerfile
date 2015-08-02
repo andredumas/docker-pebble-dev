@@ -18,6 +18,7 @@ RUN curl -sSL http://assets.getpebble.com.s3-website-us-east-1.amazonaws.com/sdk
 RUN curl -sSL http://assets.getpebble.com.s3-website-us-east-1.amazonaws.com/sdk/arm-cs-tools-ubuntu-universal.tar.gz \
 		| tar -v -C $PEBBLE_HOME -xz
 
+RUN touch /opt/NO_TRACKING
 WORKDIR $PEBBLE_HOME
 
 RUN /bin/bash -c " \
