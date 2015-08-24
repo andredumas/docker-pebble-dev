@@ -6,13 +6,10 @@
 
 # What is Pebble?
 
-> [Pebble Smartwatch](https://getpebble.com/) is a customizable watch that conveniently and subtly delivers the 
-> information that you want directly to your wrist. Pebble connects to your iOS or Android smartphone via Bluetooth 
-> and has a rechargeable battery that lasts up to 7 days per charge.
+> [Pebble Smartwatch](https://getpebble.com/) is a customizable watch that conveniently and subtly delivers the information that you want directly to your wrist. Pebble connects to your iOS or Android smartphone via Bluetooth and has a rechargeable battery that lasts up to 7 days per charge.
 
 * https://getpebble.com
-* https://en.wikipedia.org/wiki/Pebble_(watch)
-* [Introduction to Pebble](http://help.getpebble.com/customer/portal/articles/1722567-introduction-to-pebble)
+* https://en.wikipedia.org/wiki/Pebble_watch
  
 # What's in this image?
 
@@ -64,4 +61,4 @@ And:
 ## Notes
 
 When running as pebble executable with a mounted volume, any files created by the container will be on the host owned 
-as `root`.   
+as `root`.
