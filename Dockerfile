@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     python2.7-dev \
     python-pip
 
-ENV PEBBLE_VERSION PebbleSDK-3.0
+ENV PEBBLE_VERSION PebbleSDK-3.2
 ENV PEBBLE_HOME /opt/$PEBBLE_VERSION
 ENV PATH $PEBBLE_HOME/bin:$PATH
 
@@ -18,6 +18,7 @@ RUN curl -sSL http://assets.getpebble.com.s3-website-us-east-1.amazonaws.com/sdk
 RUN curl -sSL http://assets.getpebble.com.s3-website-us-east-1.amazonaws.com/sdk/arm-cs-tools-ubuntu-universal.tar.gz \
 		| tar -v -C $PEBBLE_HOME -xz
 
+RUN touch /opt/NO_TRACKING
 WORKDIR $PEBBLE_HOME
 
 RUN /bin/bash -c " \
