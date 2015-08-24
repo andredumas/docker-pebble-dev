@@ -1,14 +1,32 @@
-# docker-pebble-dev
+# Supported tags and respective `Dockerfile` links
 
-Docker image containing the [pebble watch](https://getpebble.com/) [development SDK](http://developer.getpebble.com/sdk/install/linux/).
+* [`2.8.1` (*2.8.1/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/2.8.1/Dockerfile)
+* [`3.0` (*3.0/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.0/Dockerfile)
+* [`3.2` (*3.2/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.2/Dockerfile)
+
+# What is Pebble?
+
+> [Pebble Smartwatch](https://getpebble.com/) is a customizable watch that conveniently and subtly delivers the 
+> information that you want directly to your wrist. Pebble connects to your iOS or Android smartphone via Bluetooth 
+> and has a rechargeable battery that lasts up to 7 days per charge.
+
+* https://getpebble.com
+* https://en.wikipedia.org/wiki/Pebble_(watch)
+* [Introduction to Pebble](http://help.getpebble.com/customer/portal/articles/1722567-introduction-to-pebble)
+ 
+# What's in this image?
+
+The pebble [development SDK](http://developer.getpebble.com/sdk/install/linux/) installed and ready for usage. 
+
+http://developer.getpebble.com/sdk/
+
+# How to use this image
 
 ```
 docker pull andredumas/pebble-dev
 ```
 
-## Usage
-
-Standard usage, assuming you are running from the root of your project:
+Standard usage, assuming you are running from the root of your project, is to use it to execute pebble commands:
 
 ```
 docker run --rm -it -v $PWD:/pebble pebble-dev <pebble command arguments>
