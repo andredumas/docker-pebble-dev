@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:15.04
 MAINTAINER André Dumas
 
 # Instructions as per http://developer.getpebble.com/sdk/install/linux/
@@ -6,9 +6,10 @@ MAINTAINER André Dumas
 RUN apt-get update && apt-get install -y \
     curl \
     python2.7-dev \
-    python-pip
+    python-pip \
+    libfreetype6
 
-ENV PEBBLE_VERSION PebbleSDK-3.2
+ENV PEBBLE_VERSION PebbleSDK-3.6
 ENV PEBBLE_HOME /opt/$PEBBLE_VERSION
 ENV PATH $PEBBLE_HOME/bin:$PATH
 
