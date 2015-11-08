@@ -4,7 +4,7 @@
 * [`3.0` (*3.0/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.0/Dockerfile)
 * [`3.2` (*3.2/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.2/Dockerfile)
 * [`3.4` (*3.4/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.4/Dockerfile)
-* [`3.6` (*3.4/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.6/Dockerfile)
+* [`3.6` (*3.6/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.6/Dockerfile)
 
 # What is Pebble?
 
