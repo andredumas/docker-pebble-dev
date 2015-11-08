@@ -3,6 +3,8 @@
 * [`2.8.1` (*2.8.1/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/2.8.1/Dockerfile)
 * [`3.0` (*3.0/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.0/Dockerfile)
 * [`3.2` (*3.2/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.2/Dockerfile)
+* [`3.4` (*3.4/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.4/Dockerfile)
+* [`3.6` (*3.4/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.6/Dockerfile)
 
 # What is Pebble?
 
@@ -62,3 +64,18 @@ And:
 
 When running as pebble executable with a mounted volume, any files created by the container will be on the host owned 
 as `root`.
+
+## Building
+
+```
+docker build -t pebble-dev:$VERSION .
+```
+
+## Verify
+
+Performs a simple build on a new project
+
+```
+# Second argument is the image name
+./verify-image.sh pebble-dev:3.6
+```
