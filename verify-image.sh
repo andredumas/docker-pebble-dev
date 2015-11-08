@@ -10,7 +10,7 @@ IMAGE=$1
 echo ">> Verifying image '$IMAGE' can build a project"
 
 mkdir build
-echo ">> Getting image version"
+echo ">> Image Pebble SDK version"
 docker run --rm -it -v $PWD/build:/pebble $IMAGE --version
 echo ">> Creating test project"
 docker run --rm -it -v $PWD/build:/pebble $IMAGE new-project test

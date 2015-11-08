@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     python-pip \
     libfreetype6
 
-ENV PEBBLE_VERSION PebbleSDK-3.6
+ENV PEBBLE_VERSION PebbleSDK-3.6.2
 ENV PEBBLE_HOME /opt/$PEBBLE_VERSION
 ENV PATH $PEBBLE_HOME/bin:$PATH
 
