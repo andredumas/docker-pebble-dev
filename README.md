@@ -1,6 +1,7 @@
 # Supported tags and respective `Dockerfile` links
 
 * [`2.8.1` (*2.8.1/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/2.8.1/Dockerfile)
+  * **Note:** No entrypoint is defined for this image, the command `pebble` needs to be passed in addition to other arguments.
 * [`3.0` (*3.0/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.0/Dockerfile)
 * [`3.2` (*3.2/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.2/Dockerfile)
 * [`3.4` (*3.4/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.4/Dockerfile)
@@ -29,7 +30,7 @@ docker pull andredumas/pebble-dev
 Standard usage, assuming you are running from the root of your project, is to use it to execute pebble commands:
 
 ```
-docker run --rm -it -v $PWD:/pebble pebble-dev <pebble command arguments>
+docker run --rm -it -v $PWD:/pebble andredumas/pebble-dev <pebble command arguments>
 ```
 
 Or drop the `pebble` shell script in the root of your project or PATH.
@@ -78,5 +79,5 @@ Performs a simple build on a new project
 
 ```
 # Second argument is the image name
-./verify-image.sh pebble-dev:3.6
+./verify-image.sh andredumas/pebble-dev:3.6
 ```
