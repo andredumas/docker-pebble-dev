@@ -7,6 +7,7 @@
 * [`3.4` (*3.4/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.4/Dockerfile)
 * [`3.6` (*3.6/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.6/Dockerfile)
 * [`3.6.2` (*3.6.2/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.6.2/Dockerfile)
+* [`3.7` (*3.7/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.7/Dockerfile)
 
 # What is Pebble?
 
@@ -70,7 +71,7 @@ as `root`.
 ## Building
 
 ```
-docker build -t pebble-dev:$VERSION .
+docker build -t andredumas/pebble-dev:$VERSION .
 ```
 
 ## Verify
