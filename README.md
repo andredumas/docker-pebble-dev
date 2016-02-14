@@ -8,6 +8,7 @@
 * [`3.6` (*3.6/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.6/Dockerfile)
 * [`3.6.2` (*3.6.2/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.6.2/Dockerfile)
 * [`3.7` (*3.7/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.7/Dockerfile)
+* [`3.9.2` (*3.9.2/Dockerfile*)](https://github.com/andredumas/docker-pebble-dev/blob/3.9.2/Dockerfile)
 
 # What is Pebble?
 
@@ -15,12 +16,12 @@
 
 * https://getpebble.com
 * https://en.wikipedia.org/wiki/Pebble_watch
- 
+
 # What's in this image?
 
-The pebble [development SDK](http://developer.getpebble.com/sdk/install/linux/) installed and ready for usage. 
+The Pebble [Development SDK](https://developer.pebble.com/sdk/install/linux/) installed and ready to use.
 
-http://developer.getpebble.com/sdk/
+https://developer.pebble.com/sdk/
 
 # How to use this image
 
@@ -36,8 +37,8 @@ docker run --rm -it -v $PWD:/pebble andredumas/pebble-dev <pebble command argume
 
 Or drop the `pebble` shell script in the root of your project or PATH.
 
-For Pebble SDK 2.8.1 development I was using the below `Makefile` configured with [Eclipse](https://eclipse.org/downloads/) 
-Luna [C/C++](http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/marsr). 
+For development I was using the `Makefile` below configured with [Eclipse](https://eclipse.org/downloads/)
+Luna [C/C++](http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/marsr).
 
 ```
 all:
@@ -65,7 +66,7 @@ And:
 
 ## Notes
 
-When running as pebble executable with a mounted volume, any files created by the container will be on the host owned 
+When running as pebble executable with a mounted volume, any files created by the container will be on the host owned
 as `root`.
 
 ## Building
@@ -76,9 +77,13 @@ docker build -t andredumas/pebble-dev:$VERSION .
 
 ## Verify
 
-Performs a simple build on a new project
+Verifies that the image is working correctly by creating and building a new Pebble test project:
 
 ```
 # Second argument is the image name
-./verify-image.sh andredumas/pebble-dev:3.6
+./verify-image.sh andredumas/pebble-dev:$VERSION
 ```
+
+# License
+
+By using this image you accept the [Pebble Terms of Use](https://developer.getpebble.com/legal/terms-of-use) and the [Pebble Developer License](https://developer.getpebble.com/legal/sdk-license).
