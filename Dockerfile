@@ -7,7 +7,8 @@ MAINTAINER André Dumas
 RUN apt-get update && apt-get install -y \
     curl \
     python2.7-dev \
-    python-pip
+    python-pip \
+    libfreetype6
 
 # Install Pebble Tool
 ENV PEBBLE_TOOL_VERSION pebble-sdk-4.5-linux64
